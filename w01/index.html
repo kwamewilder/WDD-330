@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity | Calculator</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <button type="button" onclick="calculate()">Calculate</button>
+    <div id="output"></div>
+
+    <input type="text" id="input2">
+    <button type="button" onclick="sum()">+</button>
+    <div id="output2"></div>
+
+    <script>
+        function calculate() {
+            let input = parseInt(document.querySelector('#input').value);
+            let output = 0;
+
+            for (let i = 1; i <= input; i++) {
+                output += i;
+            }
+            document.querySelector('#output').textContent = `The sum of all numbers up to ${input} is: ${output}`;
+        }
+
+        function sum() {
+            let input = parseInt(document.querySelector('#input').value);
+            let input2 = parseInt(document.querySelector('#input2').value);
+            let output;
+            output = input + input2;
+
+            document.querySelector('#output2').textContent = `The sum of both values is: ${output}`;
+        }
+    </script>
+</body>
+</html>
