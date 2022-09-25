@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang-en>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is my week 2 team activity that was completed for my WDD 330 course as a team."
+    />
+    <title>Team Activity | Week 2</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: lightblue;
+    }
+    header,
+    main,
+    footer {
+      margin: auto;
+    }
+    h1,
+    h2,
+    input,
+    div {
+      margin: 0 10px;
+    }
+    h1 {
+      padding: 10px 0;
+    }
+    section,
+    input,
+    button,
+    div {
+      font-size: large;
+    }
+    input,
+    button {
+      padding: 5px;
+    }
+    input {
+      margin: 10px;
+    }
+    @media (min-width: 50em) {
+      body {
+        margin: auto;
+        width: 800px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Team Activity | Week 2</h1>
+    </header>
+    <main>
+      <h2>Requirement 1</h2>
+      <input type="text" placeholder="Enter any text" id="input1" />
+      <button onclick="readInput1()">Button</button>
+
+      <div id="display1"></div>
+
+      <h2>Requirement 2</h2>
+      <input type="text" placeholder="Enter a number" id="input2" />
+      <button onclick="readInput2()">Button</button>
+
+      <div id="display2"></div>
+
+      <h2>Requirement 3</h2>
+      <section>
+        <input type="text" placeholder="Enter a number" id="input3" />
+        <input type="text" placeholder="Enter a number" id="input4" />
+        <button onclick="addBoth()">+</button>
+        <button onclick="both(1)">-</button>
+        <button onclick="both(2)">*</button>
+        <button onclick="display(divide())">/</button>
+      </section>
+
+      <div id="display3"></div>
+    </main>
+    <footer>
+      <h3>2022 | Emmanuel Gyasi-Ampomah</h3>
+    </footer>
+  </body>
+
+  <script>
+    function getNums(inputId) {
+      return parseInt(document.getElementById(`${inputId}`).value);
+    }
+    function getInput(inputId) {
+      return document.getElementById(`${inputId}`).value;
+    }
+
+    const display1 = document.getElementById("display1");
+    const display2 = document.getElementById("display2");
+    const display3 = document.getElementById("display3");
+    const display4 = document.getElementById("display4");
+
+    // requirement 1
+    function readInput1() {
+      document.getElementById("display1").innerHTML = getInput("input1");
+    }
+    // requirement 2
+    function readInput2() {
+      input2 = getNums("input2");
+      if (Number.isInteger(input2)) {
+        const sum = addNums(input2);
+        document.getElementById("display2").innerHTML = sum;
+      }
+    }
+    function addNums(inputNum) {
+      let sum = 0;
+      for (let i = 1; i <= inputNum; i++) {
+        sum += i;
+      }
+      return sum;
+    }
+
+    // requirement 3
+    function addBoth() {
+      let total = parseInt(getNums("input3")) + parseInt(getNums("input4"));
+
+      display3.innerHTML = total;
+    }
+
+    // stretch goals
+    function both(typeOfButton) {
+      let input3 = getNums("input3");
+      let input4 = getNums("input4");
+      switch (typeOfButton) {
+        case 1:
+          const subtract = function () {
+            let total = input3 - input4;
+
+            return total;
+          };
+          display3.innerHTML = subtract();
+          break;
+        case 2:
+          const multiply = (input3, input4) => input3 * input4;
+          display3.innerHTML = multiply(input3, input4);
+          break;
+        default:
+          break;
+      }
+    }
+
+    // callback
+    function display(num) {
+      display3.innerHTML = num;
+    }
+
+    function divide() {
+      let input3 = getNums("input3");
+      let input4 = getNums("input4");
+      return input3 / input4;
+    }
+  </script>
+</html>

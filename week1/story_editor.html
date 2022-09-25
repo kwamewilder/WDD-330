@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a story writing tool to help write, save and edit stories with."
+    />
+    <title>Story Writer</title>
+    <link rel="shortcut icon" href="https://antonio-saucedo.github.io/wdd-330/favicon.ico" />
+    <script>
+        function loadStory() {
+            var storyName = document.getElementById("name_input").value
+            var storyHTML = localStorage.getItem(storyName)
+            document.getElementById("story_editor").value = storyHTML
+        }
+        function saveStory() {
+            var storyName = document.getElementById("name_input").value
+            var storyHTML = document.getElementById("story_editor").value
+            localStorage.setItem(storyName, storyHTML)
+        }
+        function displayStory() {
+            var storyHTML = document.getElementById("story_editor").value
+            document.getElementById("story_display").innerHTML = storyHTML
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        section,
+        h1,
+        input,
+        textarea {
+            margin: 0 10px;
+        }
+        section,
+        h1 {
+            padding: 10px 0;
+        }
+        section,
+        input,
+        textarea,
+        button {
+            font-size: large;
+        }
+        input,
+        textarea,
+        button {
+            padding: 5px;
+        }
+        input {
+            width: 300px;
+        }
+        textarea {
+            height: 250px;
+            max-width: 800px;
+            background-color: lightblue;
+        }
+        @media (min-width: 50em) {
+            body {
+                margin: auto;
+                width: 800px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Story Editor</h1>
+    <section>
+        Story Name:<input id=name_input></input>
+    </section>
+    <section>
+        <button onclick="loadStory()">Find & Edit it</button>
+        <button onclick="saveStory()">Save it</button>
+        <button onclick="displayStory()">Display it</button>
+    </section>
+    <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
+    <section id="story_display"></section>
+  </body>
+</html>

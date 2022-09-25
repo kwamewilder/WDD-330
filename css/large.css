@@ -1,0 +1,15 @@
+@media (min-width: 64em) {
+  header h1,
+  footer h3 {
+    color: #fff;
+  }
+
+  header,
+  footer {
+    background-color: #900C3F;
+  }
+
+  ol li {
+    list-style: disc;
+  }
+}

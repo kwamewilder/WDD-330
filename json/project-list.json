@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "week": "week 1",
+            "link": "week1/index.html"
+        },
+        {
+            "week": "week 2",
+            "link": "week2/index.html"
+        },
+        {
+            "week": "week 3",
+            "link": "week3/index.html"
+        },
+        {
+            "week": "week 4",
+            "link": "week4/index.html"
+        },
+        {
+            "week": "week 5",
+            "link": "week5/index.html"
+        },
+        {
+            "week": "week 6",
+            "link": "week6/index.html"
+        },
+        {
+            "week": "week 7",
+            "link": "week7/index.html"
+        },
+        {
+            "week": "week 8",
+            "link": "week8/index.html"
+        },
+        {
+            "week": "week 9",
+            "link": "week9/index.html"
+        },
+        {
+            "week": "week 10",
+            "link": "week10/index.html"
+        },
+        {
+            "week": "week 11",
+            "link": "week11/index.html"
+        },
+        {
+            "week": "week 12",
+            "link": "week11/index.html"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  padding: 26px 1rem;
+  display: grid;
+  grid-template-rows: 170px 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+header,
+footer {
+  background-color: #900C3F;
+  filter: drop-shadow(0 0 1rem);
+}
+
+header h1,
+footer h3 {
+  color: #fff;
+}
+
+header h1 {
+  padding: 15px;
+  grid-row: 2;
+}
+
+main,
+main h2,
+ol {
+  padding: 15px 10px;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+ol li {
+  padding: 3px;
+  list-style-type: circle;
+}
+
+main ol {
+  padding-left: 50px;
+}
+
+main h2,
+ol,
+p {
+  box-shadow: 0px 1px black;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  height: 5rem;
+  text-align: center;
+  padding: 12px 0;
+}
+
+picture img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Class Selector */
+.notes main p,
+.long-notes main p {
+  padding: 15px 32px 15px 32px;
+}

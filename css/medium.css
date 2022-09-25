@@ -1,0 +1,53 @@
+@media (min-width: 34.375em) {
+  body,
+  header,
+  main,
+  footer {
+    width: 550px;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  header h1,
+  footer h3 {
+    color: #fff;
+  }
+
+  header,
+  footer {
+    background-color: #900C3F
+  }
+
+  header {
+    grid-template-columns: 170px 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  header h1 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  header,
+  footer {
+    border-radius: 20px;
+  }
+
+  ol li {
+    list-style: square;
+  }
+
+  /* Class Selector */
+  .long-notes {
+    height: 100%;
+  }
+}
+
+/*Ensure the top of the page displays correctly when screen is sideways*/
+@media (max-height: 670px) {
+  body {
+    height: 100%;
+  }
+}

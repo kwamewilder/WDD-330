@@ -1,2 +1,2 @@
-# WDD-330
-BYUI Web Frontend Development II
+# wdd-330
+WDD 330
