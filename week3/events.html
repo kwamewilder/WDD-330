@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This shows event listener examples." />
+    <title>Events Examples</title>
+    <script src="js/events.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: auto;
+        width: 90%;
+        background-color: steelblue;
+        text-align: center;
+      }
+      p,
+      ul {
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        background-color: #ccc;
+      }
+      li {
+        list-style: none;
+      }
+      .highlight {
+        background-color: red;
+      }
+      div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 50px;
+        justify-content: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Events Examples</h1>
+      <div>
+        <p id="click">Click On Me</p>
+        <p id="dblclick">Double Click On Me</p>
+        <p id="mouse">Hover On Me</p>
+        <p id="once">A One Time Thing...</p>
+        <p>
+          <a id="broken" href="https://sitepoint.com">Broken Link</a>
+        </p>
+        <ul id="list">
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

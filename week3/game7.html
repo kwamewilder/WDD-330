@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="A JavaScript Quiz Game." >
+    <title>Quiz Ninja • Game 7</title>
+    <script src="js/game7.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        width: 100%;
+        background-color: #002d33;
+      }
+      section {
+        background-color: #98a27d;
+        font-size: large;
+      }
+      h1,
+      #result,
+      .start-game {
+        text-align: center;
+      }
+      section,
+      h1,
+      button,
+      #result {
+        padding: 10px;
+      }
+      button {
+        width: 50%;
+        background-color: #aa9c8e;
+        border: 1px solid #000;
+        border-radius: 10px;
+      }
+      /* ID Selector */
+      #question {
+        font-weight: 900;
+        font-size: x-large;
+      }
+      #result {
+        color: #fff;
+      }
+      #score,
+      #question {
+        padding-bottom: 10px;
+      }
+      #info {
+        padding-top: 10px;
+      }
+      /* Class Selector */
+      .wrong {
+        background-color: #a80000;
+      }
+      .correct {
+        background-color: #005862;
+      }
+      @media (min-width: 31.25em) {
+        body {
+          margin: 0 auto;
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="dojo">
+      <div class="quiz-body">
+        <header>
+          <h1>Quiz Ninja!</h1>
+          <div id="score">Score: <strong>0</strong></div>
+        </header>
+        <div id="question"></div>
+        <div id="result"></div>
+        <div id="info"></div>
+        <div class="start-game">
+          <button id="start">Click to Start</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
