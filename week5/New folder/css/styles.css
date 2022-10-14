@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+div {
+    display: grid;
+    column-gap: 10px;
+}
+
+p {
+    grid-column: 2;
+}
+
+picture {
+    margin: auto 0;
+    grid-row: 1/5;
+}
