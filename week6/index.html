@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a to do list for conveniently keeping track of the tasks that need to be completed."
-    />
-    <title>To Do</title>
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <script src="js/ToDos.js" defer></script>
-    <script src="js/ls.js" defer></script>
-    <script src="js/utilities.js" defer></script>
-  </head>
-  <body>
-    <table>
-      <caption><h1>To Do</h1></caption>
-      <tbody></tbody>
-    </table>
-    <div id="container-footer">
-      <ul>
-        <li id="tasks-remaining"></li>
-        <li id="all">All.</li>
-        <li id="active">Active.</li>
-        <li id="complete">Completed</li>
-      </ul>
-    </div>
-    <div id="add-container">
-      <input id="task-input" type="text" />
-      <p id="add-button">+</p>
-    </div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseph Wilcken">
+    <meta name="description" content="Reading notes and Assignments completed during Week 4 of the semester.">
+    <title>Week 6: Midterm Project</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="toDo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#395b50">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#395b50">
+
+</head>
+
+<body>
+    <header>
+        <H1>
+            WDD 330 Portfolio
+        </H1>
+    </header>
+    <main>
+        <h2 class="mainTitle">Midterm Project</h2>
+        <div id="toDo">
+
+            <h3>Todos</h3>
+            <div id="toDoList">
+                <ul id="taskList">
+                    <!-- This format will be adjusted by the JavaScript -->
+                    <li>
+                        <input type="checkbox" id="checkBox1">
+                        <label for="checkBox1">This is a template, the progam should replace this.</label>
+                        <button>X</button>
+                    </li>
+                </ul>
+
+                <div id="toDoFooter">
+                    <span id="taskCount">## tasks left</span>
+                    <span class="filter right-align">
+
+                        <input type="radio" name="taskFilter" id="allTasks" checked>
+                        <label for="allTasks">All</label>
+
+                        <input type="radio" name="taskFilter" id="activeTasks">
+                        <label for="activeTasks">Active</label>
+
+                        <input type="radio" name="taskFilter" id="completedTasks">
+                        <label for="completedTasks">Completed</label>
+                    </span>
+                </div>
+            </div>
+
+            <form id="newTask" action="index.html">
+                <input type="text" placeholder="New Task" class="left-align" id="taskText" autofocus>
+                <button type="submit" class="right-align" id="addButton">+</button>
+
+            </form>
+        </div>
+
+    </main>
+    <Footer>
+        <a href="../index.html">Return to table of contents</a> <br>
+    </Footer>
+    <script src="main.js" type="module"></script>
+</body>
+
 </html>

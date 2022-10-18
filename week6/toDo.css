@@ -1,0 +1,125 @@
+main {
+    color: #191919;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* ToDo List Main Area */
+#toDo {
+    width: 50%;
+    max-width: 1000px;
+    min-width: 275px;
+    margin: 25px auto;
+}
+
+.left-align {
+    justify-self: left;
+}
+
+.right-align {
+    justify-self: right;
+}
+
+#toDo div {
+    margin: 0 auto;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+}
+
+/* Header */
+h3 {
+    text-align: center;
+}
+
+/* Task List */
+#toDoList {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px
+}
+
+li label {
+    flex-grow: 2;
+}
+
+li button {
+    justify-self: flex-end;
+}
+
+input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+
+}
+
+#taskList input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+}
+
+/* Footer */
+#toDoFooter {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+#taskCount {
+    font-size: 60%;
+    font-weight: bold;
+    padding-left: 5px
+}
+
+
+
+.filter input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.filter label {
+    cursor: pointer;
+    padding: 5.5px;
+}
+
+.filter input:checked+label {
+    border: 1px solid black;
+
+}
+
+/* New Task Submit */
+
+#newTask {
+    padding-top: 50px;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+#newTask input {
+    width: 95%;
+}
+
+main,
+label {
+    line-height: 30px;
+}
