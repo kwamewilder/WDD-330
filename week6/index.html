@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a to do list for conveniently keeping track of the tasks that need to be completed."
+    />
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script src="js/ToDos.js" defer></script>
+    <script src="js/ls.js" defer></script>
+    <script src="js/utilities.js" defer></script>
+  </head>
+  <body>
+    <table>
+      <caption><h1>To Do</h1></caption>
+      <tbody></tbody>
+    </table>
+    <div id="container-footer">
+      <ul>
+        <li id="tasks-remaining"></li>
+        <li id="all">All.</li>
+        <li id="active">Active.</li>
+        <li id="complete">Completed</li>
+      </ul>
+    </div>
+    <div id="add-container">
+      <input id="task-input" type="text" />
+      <p id="add-button">+</p>
+    </div>
+  </body>
+</html>
