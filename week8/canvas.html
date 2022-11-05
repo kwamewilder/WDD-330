@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="This shows how canvas works." >
+    <title>Canvas</title>
+    <script src="js/canvas.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      h2,
+      canvas,
+      button {
+        margin-top: 10px;
+      }
+      canvas {
+        border: dotted 2px black;
+        width: 200px;
+      }
+      button {
+        padding: 10px;
+        color: white;
+        border: 0;
+        background-image: linear-gradient(130deg, blue, red);
+      }
+      button:hover {
+        background-size: 200% 200%;
+        background-image: linear-gradient(130deg, red, blue);
+        -webkit-animation: 2s ease infinite Animation;
+        -moz-animation: 2s ease infinite Animation;
+        animation: 2s ease infinite Animation;
+      }
+      @-webkit-keyframes Animation {
+        0% {
+          background-position: 10% 0%;
+        }
+        50% {
+          background-position: 91% 100%;
+        }
+        100% {
+          background-position: 10% 0%;
+        }
+      }
+      @-moz-keyframes Animation {
+        0% {
+          background-position: 10% 0%;
+        }
+        50% {
+          background-position: 91% 100%;
+        }
+        100% {
+          background-position: 10% 0%;
+        }
+      }
+      @keyframes Animation {
+        0% {
+          background-position: 10% 0%;
+        }
+        50% {
+          background-position: 91% 100%;
+        }
+        100% {
+          background-position: 10% 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Canvas</h1>
+      <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      <canvas id="demo2" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      <canvas id="demo3" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      <h2>Saving Canvas Drawings</h2>
+      <canvas id="demo4" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      <button name="saveButton" id="saveButton">Save Drawing</button>
+      <h2>Drawing Canvas Image</h2>
+      <canvas id="demo5" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn't support Canvas.
+      </canvas>
+      <img
+        data-src="https://learnable-static.s3.amazonaws.com/premium/reeedr/books/html5-css3-for-the-real-world-2nd-edition/images/html5-logo.png"
+        id="myImageElem"
+        alt="Shield"
+      >
+    </main>
+  </body>
+</html>

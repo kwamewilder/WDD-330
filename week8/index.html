@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Here are a few notes to show what I accomplished for WDD 330 week eight."
+    >
+    <title>WDD 330 Portfolio | Week 8</title>
+    <link
+      rel="shortcut icon"
+      href="https://antonio-saucedo.github.io/wdd-330/favicon.ico"
+    >
+    <link rel="stylesheet" href="../css/small.css" >
+    <link rel="stylesheet" href="../css/medium.css" >
+    <link rel="stylesheet" href="../css/large.css" >
+  </head>
+  <body class="long-notes">
+    <header>
+      <h1>Portfolio | Week 8</h1>
+    </header>
+    <main>
+      <h2>Questions</h2>
+      <p>
+        Will we be learning about 3D transforms?<br><br>
+        What is the best way to know if our transforms/transitions will require
+        vendor prefixing?<br><br>
+        When would we use transitions vs animations and vice versa?<br><br>
+        Is inkscape a safe place to download from? I am not sure if we will be
+        creating our own SVG files but when trying to download from the link in
+        the reading, my antivirus flagged the download.<br><br>
+      </p>
+      <h2>Notes</h2>
+      <p>
+        The Transforms and Transitions reading helped me learned many new things
+        about manipulating elements on the page.<br><br>
+        I have not dealt with translations before. This will be useful to create
+        banners and general visual elements in a page.<br><br>
+        Transforms do not cause a reflow. I will need to remember this when
+        wanting to scale items.<br><br>
+        I have not had to use rotation before but I can see this being a helpful
+        tool to adding visuals to our pages.<br><br>
+        Transform and transform-origin require prefixing. <br><br>
+        Prefixing seems like it could be a bit challenging but doable.<br><br>
+        Transition requires the -webkit- prefixing.<br><br>
+        There is a list of properties that can be animated,
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+          >here.</a
+        ><br><br>
+        2 seconds/200 milliseconds is considered optimum time for a
+        transition.<br><br>
+        IE9 and older does not understand transitions.<br><br>
+        The most common timing functions include ease, linear, ease-in,
+        ease-out, and ease-in-out.<br><br>
+        Transition-delay may be something to think about using when we don't
+        want to visuals immediately after hovering and want to give the user
+        some time to look over elements on the page.<br><br>
+        Short hand transition declarations will save lines of code.<br><br>
+        SUing the all keyword in transitions will transition all properties at
+        the same rate, speed and delay.<br><br>
+        Animation requires the -webkit- prefix.<br><br>
+        Keyframes are snapshots that define a strting or end point of any smooth
+        transition.<br><br>
+        The animation name does not have quotes around it in either the property
+        value or the @keyframes at-rule. As the specifications state the name is
+        an identifier and not a string.<br><br>
+        Animation-play-state will be helpful to ensure animations don't start
+        from the beginning after pausing.<br><br>
+        In the Canvas, SVG, and Drag and Drop reading, I learned many things
+        about images.<br><br>
+        Canvas API is not supported by older browser versions.<br><br>
+        Canvas drawings are dreated in JavaScript. Because of this, we need to
+        add the height and width in the HTML canvas tag. If not set, the default
+        is 150 height x 300 width<br><br>
+        Canvas coordinate system starts at the top left corner down to the
+        bottom right.<br><br>
+        strokeStyle draws a border. fillStyle fills path color. lineWidth is
+        used to set the border width.<br><br>
+        createLinearGradient x0 and y0 represent starting location. x1 and y1
+        represent the end location.<br><br>
+        Complex shapes require us to layout, stroke and fill the path.<br><br>
+        beginPath() resets the default path to begin drawing a new shape.<br><br>
+        arc(): arc(x, y, radius, startAngle, endAngle, anticlockwise).<br><br>
+        closePath() closes the path.<br><br>
+        toDataURL method creates a URL with the image in it.<br><br>
+        Reseting the width or height of a canvas will clear it.<br><br>
+        To draw text, we need to set the fillStyle and textAlign methods and
+        finally set the text using the fillText method. We can also add a font
+        using the font property of the context object. To separate text to
+        different lines, insert it at different y values.<br><br>
+        SVG: Scalable Vector Graphics<br><br>
+        XML: eXtensible Markup Language<br><br>
+        SVG is an XML file format making it more accessible to search engines
+        than canvas.<br><br>
+        <a href="https://html.spec.whatwg.org/multipage/dnd.html"
+          >W3C's drag and drop specifications</a
+        ><br><br>
+      </p>
+      <h2>Projects</h2>
+      <ol>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="team-activity.html">Team Activity</a></li>
+      </ol>
+    </main>
+    <footer>
+      <h3>&copy; 2022 | Emmanuel O Gyasi-Ampomah | WDD 330</h3>
+    </footer>
+  </body>
+</html>

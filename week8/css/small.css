@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: cursive, fantasy, serif, sans-serif, monospace;
+}
+
+main,
+button {
+  color: yellow;
+}
+
+div {
+  display: flex;
+  margin-top: 10px;
+}
+
+ul {
+  margin: auto 10px;
+}
+
+li {
+  list-style: none;
+}
+
+button:hover,
+#mainDisplay li:hover,
+.active {
+  background-color: rgba(255, 230, 0, 0.2);
+}
+
+button:hover,
+#mainDisplay li:hover {
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+}
+
+table,
+th,
+td,
+button {
+  border: 1px solid white;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td,
+#mainDisplay li,
+button {
+  padding: 5px;
+}
+
+/* Class Selector */
+.paginationPages {
+  padding: 3px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.paginationBtn {
+  display: inline;
+}
