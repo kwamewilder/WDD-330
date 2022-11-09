@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Here are a few notes to show what I accomplished for WDD 330 week nine."
+    >
+    <title>WDD 330 Portfolio | Week 9</title>
+    <link
+      rel="shortcut icon"
+      href="https://antonio-saucedo.github.io/wdd-330/favicon.ico"
+    >
+    <link rel="stylesheet" href="../css/small.css" >
+    <link rel="stylesheet" href="../css/medium.css" >
+    <link rel="stylesheet" href="../css/large.css" >
+  </head>
+  <body class="long-notes">
+    <header>
+      <h1>Portfolio | Week 9</h1>
+    </header>
+    <main>
+      <h2>Questions</h2>
+      <p>How can we use/implement shims and polyfills?</p>
+      <h2>Notes</h2>
+      <p>
+        The Window Object reading helped me learned many new things about the
+        Browser Object Model.<br><br>
+        There is no ifficial standard for the BOM (Browser Object Model).<br><br>
+        BOM only makes sense in a browser environment. Other environments such
+        as Node.js will use global objects.<br><br>
+        In browser environments BOM is called using the window object. It is
+        best practice to not refer to this in code using window.variable but
+        rather just the variable unless when needed for statements such as logic
+        if statements.<br><br>
+        The window.alert() method will pause the execution of the program,
+        display a message in a dialog box and return undefined, always.<br><br>
+        The window.confirm method will stop the execution of the program,
+        display a message in a confirmation dialog box with the options OK and
+        Cancel. It returns a boolean, true for OK and flase for Cancel.<br><br>
+        The window.prompt will stop the execution of the program, display a
+        message in a dialog box with an input field and with options OK and
+        Cancel. It return the text entry as a string if OK is selected or null
+        if Cancel is selected.<br><br>
+        Most browsers allow users to disable dialogs meaning we should not rely
+        on them.<br><br>
+        The window.navigator.userAgent properties will return information about
+        the browser and OS being used. These can be modified by users meaning we
+        should not rely on them.<br><br>
+        The window.location property is an object that contains information
+        about the URL of the current page. The location property has other
+        properties that can be used to read/write/reload/redirect the URL
+        contents.<br><br>
+        The window.history property contains information about the current
+        sessions previously visited pages.<br><br>
+        The window.open method opens a new window and takes three paramaters,
+        URL, title, list of attributes. This can be assigned to a variable.<br><br>
+        The window.screen object contains information about the browser
+        screen.<br><br>
+        There is a limit of 20 cookies per domain. Each cookies can store up to
+        4KB of information in the form of a text file that contains name/value
+        pairs. Cookies can only be read by the a web page from the same domain
+        that set them.<br><br>
+        To create a cookie in Javascript we use the document.cookie property.
+        Cookies can be reassigned values by using the same name and a different
+        value. Cookies can be read using the property alone.<br><br>
+        Cookies expire when the session ends by default. Adding "expires=" to
+        the end of a cookie when it's set will allow the cookie to be saved
+        longer. The value would be a UTC string format (Day, DD-Mon-YYY HH:
+        MM:SS GMT). Instead of expires, we can use "max-age=" with a value in
+        seconds (86400 secs = 1 day).<br><br>
+        To delete a cookie, set the expire time to some time in the past.<br><br>
+        The setTimeout method accepts a callback funtion and a time parameter in
+        milliseconds to run the function. This returns an id and can be stopped
+        by using the clearTimeout method with the id as a parameter.<br><br>
+        The setInterval and clearInterval methods work the same as the timeout
+        methods but will continue to call the function based on the time given.
+        The set method can be set to a variable and the clear method can use the
+        variable name as a parameter in place of an id.<br><br>
+        The HTML5 APIs reading helped me learned several new things about
+        APIs.<br><br>
+        <a href="https://caniuse.com/">Can I Use</a> is a site to help check if
+        a feature can be used.<br><br>
+        The data- attribute is a way of embedding data into a page. This
+        attribute is private to a page and can be used by calling data- followed
+        by only lowercase letters, numbers, hyphens, dots, colons and
+        underscores. We have the option to include string values.<br><br>
+        The data- values can be accessed using the dataset property followed by
+        the name. Older browsers require getAttribute('data-name') instead.<br><br>
+        The geolocation API can obtain the geographical location of the device.
+        Because of privacy concerns, permission to use must be granted by the
+        user first.<br><br>
+        The geolocation API is a property of the navigator object and calls the
+        getCurrentPosition method to get a position object of the device.<br><br>
+        Web workers are what the name implies, they are workers that work in the
+        background to process information that may take a long time or not.<br><br>
+        To create a worker we use the Worker constructor function. For example
+        const worker = new Worker('task.js'), this will open a file or send an
+        error if it does not exist.<br><br>
+        Websockets are a new protocol that allows two-way communication with a
+        server.<br><br>
+        The notification API allows us to show messages using the system's
+        notifications. User permission is required before sending
+        notifications.<br><br>
+        An audio/video clip can be inserted into a page with the audio/video
+        tags respectively and using the src attribute to point to the
+        audio/video file. The controls attribute can be added to give display
+        the browser's native controls.<br><br>
+        Installed NodeJS and ran the server successfully. Did not upload files
+        to gitHub since there are over 10K items inside of the parcel file.
+      </p>
+      <h2>Projects</h2>
+      <ol>
+        <li><a href="animation.html">Animation Example</a></li>
+        <li><a href="websocket.html">Websocket</a></li>
+        <li><a href="team-activity.html">Team Activity</a></li>
+      </ol>
+    </main>
+    <footer>
+      <h3>&copy; 2022 | Emmanuel O Gyasi-Ampomah | WDD 330</h3>
+    </footer>
+  </body>
+</html>

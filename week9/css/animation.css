@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-size: 40px;
+}
+
+#square {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+#square2 {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    /* 4s was too fast. changed to 20s */
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(3600deg); } }
