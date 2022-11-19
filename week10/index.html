@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Here are a few notes to show what I accomplished for WDD 330 week ten."
+    >
+    <title>WDD 330 Portfolio • Week 10</title>
+    <link
+      rel="shortcut icon"
+      href="https://antonio-saucedo.github.io/wdd-330/favicon.ico"
+    >
+    <link rel="stylesheet" href="../css/small.css" >
+    <link rel="stylesheet" href="../css/medium.css" >
+    <link rel="stylesheet" href="../css/large.css" >
+  </head>
+  <body class="long-notes">
+    <header>
+      <h1>Portfolio • Week 10</h1>
+      <picture>
+        <img src="../images/pen&paper.jpg" alt="Pen & Paper" >
+      </picture>
+    </header>
+    <main>
+      <h2>Questions</h2>
+      <p>How often would we use custom messages?</p>
+      <h2>Notes</h2>
+      <p>
+        The Validating Forms reading helped me review client-side form
+        validation.<br><br>
+        We use client-side validation to ensure we get the right data, to
+        protect user's data by making them create stronger passwords based on
+        preset requirements and help protect then server from malicious requests
+        from the client-side.<br><br>
+        Server-side will require validation of it's own since client-side
+        validation can be turned off.<br><br>
+        Built-in form validation uses HTML form validation features.
+        <br><br>
+        JavaScript validation is coded using JavaScript. Everything needs to be
+        created or use a library.<br><br>
+        <u>Built-in form validation:</u><br>
+        If a form element is valid, the element matches the :valid CSS
+        pseudo-class. If not, it follows the :invalid CSS pseudo-class. These
+        classes allow for specific styling.<br><br>
+        If a form element contains a require attribute, the element matches the
+        :required UI pseudo-class. If the element is empty, it matches the
+        :invalid pseudo-class.<br><br>
+        The textarea element does not support the pattern attribute.<br><br>
+        <u>JavaScript form validation:</u><br><br>
+        The
+        <b
+          ><a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation"
+            >constraint validation API</a
+          ></b
+        >
+        use form element DOM interfaces. The elements have several properties
+        available for validation.<br><br>
+        Validationg without a built-in API works best when we include answers to
+        the following questions.<br>• What kind of Validation should I
+        perform?<br>• What should I do if the form doesn't validate?<br>•
+        What should I do if the form doesn't validate?<br><br>
+        The Using Fetch reading helped me review the Fetch API.<br><br>
+        The
+        <b
+          ><a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch"
+            >fetch</a
+          ></b
+        >
+        method can accept a second parameter, init object, that allows control
+        over different settings.<br><br>
+        To send a request with credentials, we add "credentials:" to the init
+        object where credentials is equal to include, same-origin and omit.<br><br>
+        To post JSON-encoded data, use the post method inside the init object
+        along with headers, content type and body information.<br><br>
+        Uploading a file uses an HTML input element with a file type and the
+        FormData method.<br><br>
+        To upload multiple files, we use the same items as before but append
+        items to dictionaries with key/value entries.<br><br>
+        To check for successful responce from fetch, use the response.ok
+        property.<br><br>
+        Use the Request method or the clone method before the body of the
+        original request or responce has already been read. Once a
+        request/responce has been read, it is marked as read and will not be
+        read again.<br><br>
+        Use the Headers constructor to create your own headers. The headers
+        object is a simple multi-map of names to values.<br><br>
+        Header methods throw TypeErrors that will fail silently unless we use a
+        catch statement to notify us when an error occurs.<br><br>
+        Headers have guard properties set based on creation/called/responce. The
+        default guard is none and the others are request, request-no-cors,
+        responce and immutable(mostly used for ServiceWorkers).<br><br>
+        Requests and responses contain body data, which is an instance of
+        ArrayBuffer, TypedArray, DataView, Blob, File, String, URLSearchParams
+        or FormData.<br><br>
+        The same methods can extract the body from the request and responce.
+        .arrayBuffer(), .blob(), .formData(), .json(), .text().
+      </p>
+      <h2>Projects</h2>
+      <ol>
+        <li><a href="quakes.html">Team Activity</a></li>
+      </ol>
+    </main>
+    <footer>
+      <h3>&copy; 2022 | Emmanuel O Gyasi-Ampomah | WDD 330</h3>
+    </footer>
+  </body>
+</html>
