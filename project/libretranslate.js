@@ -13,7 +13,7 @@ export async function detectLanguage(text) {
     let form = new FormData();
     form.set('q', text);
 
-    const response = await fetch('https://libretranslate.com/detect', {
+    const response = await fetch('https://translate.adminforge.de/detect', {
         method: 'POST',
         body: form
     });
@@ -36,7 +36,7 @@ export async function getTranslation(text, sourceLang, targetLang) {
     form.set('source', sourceLang);
     form.set('target', targetLang);
 
-    const response = await fetch('https://libretranslate.com/translate', {
+    const response = await fetch('https://translate.adminforge.de/translate', {
         method: 'POST',
         body: form
     });
