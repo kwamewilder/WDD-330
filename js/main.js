@@ -1,4 +1,4 @@
-const URL = "https://antonio-saucedo.github.io/wdd-330/json/project-list.json";
+const URL = "https://github.com/kwamewilder/WDD-330/blob/95cb160342d710b536237faa119e1f77988bf645/json/project-list.json";
 
 const displayBlock1 = document.getElementById("block1");
 const displayBlock2 = document.getElementById("block2");
