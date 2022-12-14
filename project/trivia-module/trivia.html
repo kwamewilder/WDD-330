@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <main class="trivia-list">
+    <h1>Trivia Game</h1>
+    <button><a  class="home-btn" href="../index.html">Home</a></button>
+    <section class='dojo'>
+      <div class='quiz-body'>
+        <header>
+          <div id='timer'>Time: <strong>60</strong></div>
+          <div id='score'>Score: <strong>0</strong></div>
+          <div id='hiScore'>High Score: <strong></strong></div>
+        </header>
+        <div id='question'></div>
+        <div id='response'></div>
+        <div id='result'></div>
+        <div id='info'></div>
+        <button id='start'>Click to Start</button>
+      </div>
+    </section>
+    <audio id="mySoundClip">
+      <source src="../audio/others/that-is-correct.mp3">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="wrongAnswer">
+      <source src="../audio/others/no-captain.mp3">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="forceSound">
+      <source src="../audio/others/force-strong.mp3">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+  </main>
+
+  <script src="main.js"></script>
+  <script>
+    start(quiz);
+  </script>
+</body>
+
+</html>

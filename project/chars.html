@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Star Wars Characters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="char-list">
+
+    <h1>List of Characters</h1>
+    <button><a href="./index.html" class="home-btn">Home</a></button>
+    <ul id="starwars" class="mainlist">
+      <!-- selected list to be applied here -->
+    </ul>
+    <div id="pages" class="pagination">
+      <button id="first">
+        <<</button> <button id="previous">Previous
+      </button>
+      <button id="next">Next</button>
+      <button id="last">>></button>
+    </div>
+    <audio id="mySoundClip">
+      <source src="./audio/others/bb8_beep_beep.mp3">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="saberSound">
+      <source src="./audio/others/light-saber-swing-1.mp3">
+      </source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+  </main>
+  <script src="./main.js" type="module"></script>
+  <script>
+    window.onload = function () {
+      var audionameslist = "./audio/others/bb8_beep_beep.mp3";
+      var audionamesarray = audionameslist.split(',');
+      var audio = new Audio(audionamesarray[0]);
+
+      audio.src = audionamesarray[0];
+      audio.play();
+
+      index = 0;
+      audio.onended = function () {
+        if (index < audionamesarray.length) {
+          audio.src = audionamesarray[index + 1];
+          audio.play();
+          index++;
+        }
+      };
+    }
+
+    function PlaySound(soundobj) {
+      var thissound = document.getElementById(soundobj);
+      thissound.play();
+    }
+
+    function StopSound(soundobj) {
+      var thissound = document.getElementById(soundobj);
+      thissound.pause();
+      thissound.currentTime = 0;
+    }
+  </script>
+</body>
+
+</html>

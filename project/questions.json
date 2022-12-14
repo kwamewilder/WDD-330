@@ -1,0 +1,484 @@
+{
+	"questions": [{
+			"question": "What is the name of Han Solo’s ship?",
+			"answer": "Millennium Falcon",
+			"option": ["Radiant VII","N-1 Starfighter"]
+		},
+		{
+			"question": "The young Jedi Knight, Anakin Skywalker, becomes who in Star Wars?",
+			"answer": "Darth Vader",
+			"option": ["Obi-Wan Kenobi","Kylo Ren"]
+		},
+		{
+			"question": "The planet Kashyyyk is home to who?",
+			"answer": "Chewbacca and the Wookiees",
+			"option": ["Yoda","Obi-Wan Kenobi"]
+		},
+		{
+			"question": "In Revenge of the Sith and Attack of the Clones, what color is Yoda’s lightsaber?",
+			"answer": "Green",
+			"option": ["Blue","White"]
+		},
+		{
+			"question": "The X-wing fighter has how many engines?",
+			"answer": "Four",
+			"option": ["Two","Eight"]
+		},
+		{
+			"question": "Jedi Council consists of how many members?",
+			"answer": "Twelve",
+			"option": ["One Hundred","Three"]
+		},
+		{
+			"question": "What were Luke’s aunt and uncle’s jobs on Tatooine?",
+			"answer": "Moisture farmers",
+			"option": ["Droid Traders","Mechanics"]
+		},
+		{
+			"question": "How many languages is C-3P0 fluent in?",
+			"answer": "Over 6 million",
+			"option": ["Four","10,000"]
+		},
+		{
+			"question": "Which character is partially named after George Lucas’ son?",
+			"answer": "Dexter Jettster",
+			"option": ["Sheev Palpatine","Mace Windu"]
+		},
+		{
+			"question": "How many Dewbacks were in the original 1977 theatrical cut of the first Star Wars movies?",
+			"answer": "Two",
+			"option": ["One","Three"]
+		},
+		{
+			"question": "What color is Mace Windu’s lightsaber?",
+			"answer": "Purple",
+			"option": ["Red","Green"]
+		},
+		{
+			"question": "Who played the part of Mace Windu?",
+			"answer": "Samuel L. Jackson",
+			"option": ["Liam Neeson","Billy Dee Williams"]
+		},
+		{
+			"question": "Which species stole the plans to the death star?",
+			"answer": "Bothans",
+			"option": ["Ewoks","Hutts"]
+		},
+		{
+			"question": "What kind of trooper is introduced at the beginning of Rogue One?",
+			"answer": "Death Troopers",
+			"option": ["Storm Troopers","Clone Troopers"]
+		},
+		{
+			"question": "Who kissed Leia first?",
+			"answer": "Luke",
+			"option": ["Han","R2-D2"]
+		},
+		{
+			"question": "What does AT-AT stand for?",
+			"answer": "All Terrain Armored Transport",
+			"option": ["Automatic Artillery","Artificial Tiny Armored Twi'leks"]
+		},
+		{
+			"question": "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
+			"answer": "3,720 to 1",
+			"option": ["1 to 2","1,000,000 to 1"]
+		},
+		{
+			"question": "Who are the masters of the Dark Side that want to rule the galaxy?",
+			"answer": "The Sith",
+			"option": ["The Rodians","The Zabraks"]
+		},
+		{
+			"question": "Count Dooku is also known as who?",
+			"answer": "Darth Tyranus",
+			"option": ["Qui-Gon Jinn","Supreme Leader Snoke"]
+		},
+		{
+			"question": "What is the name of Boba Fett’s ship?",
+			"answer": "Slave 1",
+			"option": ["TIE Striker","Hammerhead Corvette"]
+		},
+		{
+			"question": "Who was the original commander of the Death Star?",
+			"answer": "Grand Moff Tarkin",
+			"option": ["Darth Bane","Kylo Ren"]
+		},
+		{
+			"question": "What was the name of the planet that the clones were made on?",
+			"answer": "Kamino",
+			"option": ["Mustafar","Dagobah"]
+		},
+		{
+			"question": "When Leia first tells Han Solo that she loves him, what is his reply?",
+			"answer": "I know.",
+			"option": ["It's too late.","Now is not the time."]
+		},
+		{
+			"question": "What day is Wookiee Life Day?",
+			"answer": "November 17th",
+			"option": ["December 23rd","February 14th"]
+		},
+		{
+			"question": "Peter Mayhew played the part of who in the original Star Wars Trilogy?",
+			"answer": "Chewbacca",
+			"option": ["Han Solo","Obi-Wan Kenobi"]
+		},
+		{
+			"question": "What language are the words written on Darth Vader’s chest piece in?",
+			"answer": "Ancient Hebrew",
+			"option": ["Dathomiri","Sith"]
+		},
+		{
+			"question": "What is the other name for The Imperial Probe Droid?",
+			"answer": "Probot",
+			"option": ["Tusken Raider","Starkiller"]
+		},
+		{
+			"question": "The four Jedi Masters Kit Fisto, Mace Windu, Agen Kolar, and Saesee Tinn, were killed by who?",
+			"answer": "Darth Sidious",
+			"option": ["Darth Maul","Darth Tarkin"]
+		},
+		{
+			"question": "Where was Luke Skywalker originally headed to pick up power converters?",
+			"answer": "Tosche Station",
+			"option": ["Tatooine","Millenium Falcon"]
+		},
+		{
+			"question": "Which two sectors does The Empire Strikes Back take place in?",
+			"answer": "The Sluis Sector and The Anoat Sector",
+			"option": ["Radiant VII Sector and Radiant IX Sector","Mustafar and Kamino"]
+		},
+		{
+			"question": "Who’s the only rebel pilot to survive all three movies in the original trilogy?",
+			"answer": "Wedge Antilles",
+			"option": ["Han Solo","Temmin Wexley"]
+		},
+		{
+			"question": "What species is Yoda?",
+			"answer": "It is unknown",
+			"option": ["Zabraks","Bothans"]
+		},
+		{
+			"question": "What is the name of the imperial admiral at the beginning of The Empire Strikes Back?",
+			"answer": "Ozzeo",
+			"option": ["Wilhuff Tarkin","Betl Oxtroe"]
+		},
+		{
+			"question": "What is the name of the Toydarian who owned Anakin Skywalker?",
+			"answer": "Watto",
+			"option": ["Zabaka","Katuunko"]
+		},
+		{
+			"question": "Who was the last one to jump down the Death Star’s garbage chute?",
+			"answer": "Han",
+			"option": ["Chewbacca","Luke"]
+		},
+		{
+			"question": "What race of aquatic sentient beings does Jar-Jar Binks belong to?",
+			"answer": "The Gungans",
+			"option": ["The Bothans","The Chiss"]
+		},
+		{
+			"question": "Who killed Han Solo?",
+			"answer": "Kylo Ren",
+			"option": ["Darth Vader","Obi-Wan Kenobi"]
+		},
+		{
+			"question": "Who built C-3P0?",
+			"answer": "Anakin Skywalker",
+			"option": ["Luke Skywalker","Owen Lars"]
+		},
+		{
+			"question": "What is the name of the organization that builds a blockade around Naboo?",
+			"answer": "The Trade Federation",
+			"option": ["Murra Orders","Organium Group"]
+		},
+		{
+			"question": "Which actress starred as Queen Amidala’s decoy and hand-maiden Sabè?",
+			"answer": "Kiera Knightley",
+			"option": ["Natalie Portman","Claudia Karvan"]
+		},
+		{
+			"question": "What creature lives in the garbage compactor of the original Death Star?",
+			"answer": "Dianoga",
+			"option": ["Mon Calamari","Kaminoan"]
+		},
+		{
+			"question": "What planet does Obi-Wan Kenobi travel to where he discovers an army of clones created for the Republic?",
+			"answer": "Kamino",
+			"option": ["Kashyyyk","Yavin"]
+		},
+		{
+			"question": "Who is the Sith leader of the Separatist movement?",
+			"answer": "Count Dooku",
+			"option": ["Darth Sidius","Nute Gunray"]
+		},
+		{
+			"question": "What does the Emperor say is Luke’s weakness?",
+			"answer": "His faith in his friends",
+			"option": ["His emotion and temper","His saber"]
+		},
+		{
+			"question": "How many arms does the alien diner owner, Dex Jettster, have?",
+			"answer": "Four",
+			"option": ["Two","None"]
+		},
+		{
+			"question": "What do Han and Luke ride on in the snow on Hoth?",
+			"answer": "Tauntaun",
+			"option": ["Bantha","Rancor"]
+		},
+		{
+			"question": "Who is Jango Fett’s son?",
+			"answer": "Boba Fett",
+			"option": ["Zam Wesell","Obi-Wan Kenobi"]
+		},
+		{
+			"question": "Which arm of Anakin’s does Count Dooku cut off?",
+			"answer": "The right",
+			"option": ["The left","Both"]
+		},
+		{
+			"question": "When Luke asked what was in the cave on Dagobah, what was Yoda’s response?",
+			"answer": "Only what you take with you.",
+			"option": ["Help you I can","Feel force"]
+		},
+		{
+			"question": "What is Chancellor Palpatine’s malicious Sith alter-ego?",
+			"answer": "Darth Sidious",
+			"option": ["Darth Malgus","Darth Plagueis"]
+		},
+		{
+			"question": "In what “detention block” was Princess Leia being held in, in the first Death Star?",
+			"answer": "AA-23",
+			"option": ["BB-8","AB-12"]
+		},
+		{
+			"question": "What does “TIE” stand for in TIE Fighter?",
+			"answer": "Twin Ion Engines",
+			"option": ["Toxic Independent Emission","Trace, Intervene, and Eliminate"]
+		},
+		{
+			"question": "Who is the senator that adopts Leia?",
+			"answer": "Bail Organa",
+			"option": ["Mina Bonteri","Tundra Dowmeia"]
+		},
+		{
+			"question": "Which Wookiee Jedi Master was renowned for his ability to sense the future?",
+			"answer": "Tyvokka",
+			"option": ["Chewbacca","Yoda"]
+		},
+		{
+			"question": "“You were right,” were whose last words to Luke?",
+			"answer": "Darth Vader’s",
+			"option": ["Han Solo's","Obi-Wan Kenobi"]
+		},
+		{
+			"question": "What is the name of the order Darth Sidious gives the clone troopers, which means they will kill all Jedi?",
+			"answer": "Order 66",
+			"option": ["Order of Extermination","The Ultimate Order"]
+		},
+		{
+			"question": "What was the nickname of Snoova, the Wookiee bounty hunter?",
+			"answer": "Madclaw",
+			"option": ["Tojjevvuk","Kashyyyk"]
+		},
+		{
+			"question": "In the Star Wars Holiday Special, which ocean planet was introduced?",
+			"answer": "Panna",
+			"option": ["Corellia","Dagobah"]
+		},
+		{
+			"question": "How many people does Darth Vader kill in The Empire Strikes Back?",
+			"answer": "Two",
+			"option": ["One Hundred","Four"]
+		},
+		{
+			"question": "What’s the name of the planet where Anakin Skywalker loses the duel against Obi-Wan, which leaves him mangled and burned?",
+			"answer": "Mustafar",
+			"option": ["Ryloth","Dantooine"]
+		},
+		{
+			"question": "What do they call the children being trained as Jedi?",
+			"answer": "Younglings",
+			"option": ["Newgens","The Hunters"]
+		},
+		{
+			"question": "What bounty hunter used a bowcaster as his weapon of choice?",
+			"answer": "Embo",
+			"option": ["Bossk","Jango Fett"]
+		},
+		{
+			"question": "What can be considered the primary reason for Anakin falling to the dark side?",
+			"answer": "He wanted to save Padmè from death during childbirth",
+			"option": ["He wanted to save the universe from the dark side","His thirst of power"]
+		},
+		{
+			"question": "On what planet did Cadbane capture Bolla Ropal?",
+			"answer": "Devaron",
+			"option": ["Hoth","Naboo"]
+		},
+		{
+			"question": "What is the Rule of 2?",
+			"answer": "There can only be two Sith Lords at one time",
+			"option": ["There can only be two light sabers used in a fight","Senators must be accompanied by two guardians at all time"]
+		},
+		{
+			"question": "Who was the composer for every film in the Star Wars Saga?",
+			"answer": "John Williams",
+			"option": ["Hans Zimmer","Ennio Morricone"]
+		},
+		{
+			"question": "What are the short junk-collecting aliens on Tatooine called?",
+			"answer": "Jawas",
+			"option": ["Hutts","Wookies"]
+		},
+		{
+			"question": "What are Luke’s aunt and uncle called?",
+			"answer": "Owen and Beru Lars",
+			"option": ["James and Barbara Lucas","Mark and Betty Weseli"]
+		},
+		{
+			"question": "Where were Luke and Leia born?",
+			"answer": "Polis Massa",
+			"option": ["Tatooine","Padma"]
+		},
+		{
+			"question": "How big is the exhaust port that is the target for Rebel Alliance Starfighters in A New Hope?",
+			"answer": "Two meters",
+			"option": ["Two feet","Two miles"]
+		},
+		{
+			"question": "Which planet holds the hidden rebel base?",
+			"answer": "Yavin IV",
+			"option": ["Coruscant","Mustafar"]
+		},
+		{
+			"question": "What planet does the Rebel Alliance find refuge on at the beginning of The Empire Strikes Back?",
+			"answer": "Hoth",
+			"option": ["Tatooine","Dagobah"]
+		},
+		{
+			"question": "Who is Han’s friend who runs the cloud city of Bespin?",
+			"answer": "Lando Calrissian",
+			"option": ["Yavin Vassilika","Bib Fortuna"]
+		},
+		{
+			"question": "In what substance is Han Solo frozen for delivery to Jabba the Hutt?",
+			"answer": "Carbonite",
+			"option": ["Admantium","Nitrogen"]
+		},
+		{
+			"question": "What race of alien is Admiral Ackbar?",
+			"answer": "Mon Calamari",
+			"option": ["Kaminoans","Falleen"]
+		},
+		{
+			"question": "Which year was the film Return of the Jedi released?",
+			"answer": "1983",
+			"option": ["1967","1988"]
+		}, {
+			"question": "How old is Yoda when he dies?",
+			"answer": "900",
+			"option": ["90","90,000"]
+		},
+		{
+			"question": "What is the name of the Emporer’s Hand who was on Jabba’s sail barge during Han’s rescue?",
+			"answer": "Mara Jade",
+			"option": ["Raynal Thul","Lumiya"]
+		},
+		{
+			"question": "Who infiltrates Jabba’s palace in disguise to save Han Solo?",
+			"answer": "Princess Leia",
+			"option": ["Luke Skywalker","Chewbacca"]
+		},
+		{
+			"question": "What are the miniature aliens that help the Rebels destroy the shield generator on Endor?",
+			"answer": "Ewoks",
+			"option": ["Falleen","Jawas"]
+		},
+		{
+			"question": "Who stars as Han Solo in the original Star Wars films?",
+			"answer": "Harrison Ford",
+			"option": ["Alden Ehrenreich","Ross Marquand"]
+		},
+		{
+			"question": "What makes Han Solo temporarily blind after he is freed from the carbonite?",
+			"answer": "Hibernation sickness",
+			"option": ["Radiation","Motion sickness"]
+		},
+		{
+			"question": "What is the name of Lando Calrissian’s co-pilot in Return of the Jedi?",
+			"answer": "Nien Nunb",
+			"option": ["Admiral Ackbar","Kyle Ren"]
+		},
+		{
+			"question": "George Lucas’ original last name for Luke was what?",
+			"answer": "Starkiller",
+			"option": ["Stargazer","Starfighter"]
+		},
+		{
+			"question": "Han Solo’s trusty blaster is what type of blaster?",
+			"answer": "DL-44",
+			"option": ["BB-77","N-1 Starfighter"]
+		},
+		{
+			"question": "How tall is Chewbacca?",
+			"answer": "7’6″",
+			"option": ["10’","9’8″"]
+		},
+		{
+			"question": "What planet does Rey live on in The Force Awakens?",
+			"answer": "Jakku",
+			"option": ["Hoth","Bespin"]
+		},
+		{
+			"question": "Luke Skywalker’s self-imposed exile takes place on what planet?",
+			"answer": "Ach-TO",
+			"option": ["Ryloth","Yavin"]
+		},
+		{
+			"question": "What is Poe Dameron’s droid called?",
+			"answer": "BB-8",
+			"option": ["C3PO","Podroid"]
+		},
+		{
+			"question": "On which planet does the Resistance have its base?",
+			"answer": "D’Qar",
+			"option": ["Polis Massa","Exodeen"]
+		},
+		{
+			"question": "How old was Padmè when she became Queen?",
+			"answer": "14",
+			"option": ["18","21"]
+		},
+		{
+			"question": "Who are Kylo Ren’s father?",
+			"answer": "Han Solo",
+			"option": ["Obi-Wan Kenobi","Luke Skywalker"]
+		},
+		{
+			"question": "Who is the cantina owner on Takodana who has a lightsaber in her possession?",
+			"answer": "Maz Katana",
+			"option": ["Din Djarin","Grogu"]
+		},
+		{
+			"question": "Who is the supreme leader of the First Order?",
+			"answer": "Snoke",
+			"option": ["Ezra","Manzella"]
+		},
+		{
+			"question": "What is the name of Luke’s childhood best friend that later served beside him in the rebellion?",
+			"answer": "Biggs Darklighter",
+			"option": ["Jek Tono Porkins","Garven Dreis"]
+		},
+		{
+			"question": "What is the red substance found on the planet Crait?",
+			"answer": "Salt",
+			"option": ["Carbonite","Noron"]
+		}
+
+
+	]
+}

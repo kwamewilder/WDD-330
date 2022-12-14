@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Star Wars App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <main class="main-page">
+        <div class="sky"></div>
+        <div id="ship"></div>
+
+        <div class="life-bar-cont">
+            <div class="life-bar">
+                <div class="inside-bar"></div>
+            </div>
+        </div>
+        <div class="set setbg white">
+            <nav class="d-pad">
+                <a class="up" id="up-button"></a>
+                <a class="right" id="right-button"></a>
+                <a class="down" id="down-button"></a>
+                <a class="left" id="left-button"></a>
+            </nav>
+        </div>
+        <div class="o-pad" id="o-pad">
+            <button id="fire">Shoot</button>
+        </div>
+        <audio id="wrongAnswer">
+            <source src="../shooter-module/assets/sounds/theme-song.mp3">
+            </source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <audio id="blastSound">
+            <source src="../shooter-module/assets/sounds/blast.mp3">
+            </source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+    </main>
+    <script src="./main.js" type="module"></script>
+    <script>
+        window.onload = function () {
+            var audionameslist = "../shooter-module/assets/sounds/theme-song.mp3";
+            var audionamesarray = audionameslist.split(',');
+            var audio = new Audio(audionamesarray[0]);
+
+            audio.src = audionamesarray[0];
+            audio.loop = true;
+            audio.play();
+
+            index = 0;
+            audio.onended = function () {
+                if (index < audionamesarray.length) {
+                    audio.src = audionamesarray[index + 1];
+                    audio.play();
+                    index++;
+                }
+            };
+        }
+    </script>
+</body>
+
+</html>

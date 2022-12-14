@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Open+Sans&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "star_jediregular";
+  src: url("starjedi-webfont.woff2") format("woff2"), url("starjedi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #e89e10;
+  text-align: center;
+  font-family: "star_jediregular", "Geostar Fill", cursive;
+}
+
+nav {
+  height: 50vh;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: url(./images/main-background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #0C0C0C;
+  height: 97vh;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+main.char-list::after {
+  background: url(./images/bb8_1.svg) no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  position: absolute;
+  content: "";
+  width: 125px;
+  height: 125px;
+  left: -25px;
+  z-index: -1;
+  margin-top: 5%;
+}
+
+.logo {
+  padding: 2%;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./images/darth-vader.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.navigation a {
+  background-color: black;
+  border: 3px solid yellow;
+  color: white;
+  width: 50%;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding: 2% 0;
+  border-radius: 10px;
+  font-family: "star_jediregular", "Geostar Fill", cursive;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+button {
+  background-color: #e89e10;
+  color: white;
+  font-size: 1em;
+  border: 1px solid #e89e10;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  padding: 2% 5%;
+  font-weight: bold;
+}
+
+.backbutton {
+  text-align: center;
+}
+
+.home-btn {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em;
+}
+
+.mainlist li {
+  padding: 0 0.5em;
+  line-height: 2em;
+  text-align: left;
+}
+
+.full-detail li {
+  border: none;
+}
+
+.pagination {
+  text-align: center;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  color: blue;
+}
+
+.names:hover {
+  cursor: pointer;
+}
+
+#titles {
+  position: absolute;
+  width: 40vh;
+  height: 50em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -7em;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg);
+  z-index: -1;
+}
+
+#titles h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+#titles:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, black 0%, transparent 100%);
+  pointer-events: none;
+}
+
+#titlecontent {
+  position: absolute;
+  top: 100%;
+  animation: scroll 100s linear 4s infinite;
+  color: yellow;
+}
+
+.margin-bottom-scrolling {
+  margin-bottom: 150px;
+}
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+ul#starwars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 50vh;
+  min-width: 50vw;
+}
+
+ul#starwars li {
+  background: #ecfcff;
+  box-shadow: #4df 0px 0px 0px 2px;
+  font-size: 1em;
+  /* line-height: 1.25em; */
+  padding: 0px;
+  padding-left: 15px;
+  margin: 16px 0px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 0px 100px 100px 0px;
+  transition: width 0.2s ease, padding 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  color: black;
+  opacity: 0.8;
+}
+
+ul#starwars li:hover {
+  box-shadow: #4df 0px 0px 20px 2px;
+  text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
+  opacity: 1;
+}
+
+ul#starwars li:hover {
+  width: 98%;
+  padding: 0px 16px 0px 0px;
+  color: black;
+  text-align: center;
+}
+
+ul#starwars li.full-detail {
+  background: transparent;
+  width: 100%;
+  box-shadow: transparent 0px 0px 0px 2px;
+  opacity: 0.8;
+}
+
+ul#starwars li.full-detail {
+  opacity: 1;
+}
+
+ul#starwars li.green {
+  background: #e6ffe6;
+  box-shadow: #0F0 0px 0px 0px 2px;
+}
+
+ul#starwars li.green:hover {
+  box-shadow: #0F0 0px 0px 20px 2px;
+  text-shadow: #0F0 0px 0px 6px, #0F0 0px 0px 10px;
+}
+
+ul li.red {
+  background: #ffe6e6;
+  box-shadow: #F00 0px 0px 0px 2px;
+}
+
+ul li.red:hover {
+  box-shadow: #F00 0px 0px 20px 2px;
+  text-shadow: #F00 0px 0px 6px, #F00 0px 0px 10px;
+}
+
+#details li:hover {
+  cursor: pointer;
+}
+
+#details-name {
+  font-size: 1.5em;
+}
+
+.char-list h1,
+.trivia-list h1 {
+  font-size: 2em;
+  padding: 5% 0;
+}
+
+.dojo {
+  height: 70vh;
+  padding: 2%;
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  margin-top: 25px;
+}
+
+#response {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quiz-body header,
+#info,
+#result {
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+#start {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
