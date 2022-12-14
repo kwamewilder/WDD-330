@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <meta name="description" content="WDD 330 Personal Project" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module"></script>
+    <!-- <script src="test.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <h1>Translator</h1>
+    </header>
+    <main>
+        <section id="input-container">
+            <section class="input" id="source-input">
+                <span>From:</span>
+                <select id="source-lang">
+                    <option value="null">Select Language</option>
+                    <option value="en" selected>English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="az">Azerbaijani</option>
+                    <option value="zh">Chinese</option>
+                    <option value="cs">Czech</option>
+                    <option value="nl">Dutch</option>
+                    <option value="fi">Finnish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="hi">Hindi</option>
+                    <option value="hu">Hungarian</option>
+                    <option value="id">Indonesian</option>
+                    <option value="ga">Irish</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portugese</option>
+                    <option value="ru">Russian</option>
+                    <option value="es">Spanish</option>
+                    <option value="sv">Swedish</option>
+                    <option value="tr">Turkish</option>
+                    <option value="uk">Ukranian</option>
+                    <option value="vi">Vietnamese</option>
+                </select>
+                <!-- <button id="source-detect">Detect language</button> -->
+                <!-- <button id="source-select">Select on map</button> -->
+                <br>
+                <textarea id="source-text"></textarea>
+            </section>
+
+            <section id="action-buttons">
+                <button id="action-swap">Swap</button>
+                <button id="action-translate">Translate</button>
+            </section>
+
+            <section class="input" id="target-input">
+                <span>To:</span>
+                <select id="target-lang">
+                    <option value="null">Select Language</option>
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="az">Azerbaijani</option>
+                    <option value="zh">Chinese</option>
+                    <option value="cs">Czech</option>
+                    <option value="nl">Dutch</option>
+                    <option value="fi">Finnish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="hi">Hindi</option>
+                    <option value="hu">Hungarian</option>
+                    <option value="id">Indonesian</option>
+                    <option value="ga">Irish</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portugese</option>
+                    <option value="ru">Russian</option>
+                    <option value="es" selected>Spanish</option>
+                    <option value="sv">Swedish</option>
+                    <option value="tr">Turkish</option>
+                    <option value="uk">Ukranian</option>
+                    <option value="vi">Vietnamese</option>
+                </select>
+                <!-- <button id="target-select">Select on map</button> -->
+                <br>
+                <textarea id="target-text"></textarea>
+            </section>
+        </section>
+
+        <section id="map-interface">
+            <!-- <button id="zoom" data-zoom="in">Zoom in</button> -->
+            <div id="source-cell" class="cell">
+                <span></span>
+                <button id="source-button" data-active="false">Select</button>
+            </div>
+            <div id="target-cell" class="cell">
+                <span></span>
+                <button id="target-button" data-active="true">Select</button>
+            </div>
+        </section>
+        <div id="map-parent">
+            <div id="error-banner" style="opacity: 0">
+                <span></span>
+            </div>
+            <!-- <input type="range" id="zoom-range" min="0" max="100" step="10" value="0"> -->
+            <section id="map">
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

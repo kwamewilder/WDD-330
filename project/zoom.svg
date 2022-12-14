@@ -1,0 +1,18 @@
+<svg width="32" height="32" version="1.1" viewBox="0 0 8 8"
+    xmlns="http://www.w3.org/2000/svg">
+    <style>
+        g {display: none}
+        g:target {display: inline}
+    </style>
+    <g id="zoom-in" fill="currentColor" shape-rendering="crispEdges">
+        <path d="m1 3h2v-2h2v2h2v2h-2v2h-2v-2h-2z"/>
+    </g>
+
+    <g id="zoom-out" fill="currentColor" shape-rendering="crispEdges">
+        <path d="m1 3h6v2h-6z"/>
+    </g>
+
+    <g id="ask" fill="currentColor">
+        <path d="m4.48 5.47h-1.03c-0.0253-0.487 0.0135-1.03 0.371-1.4 0.32-0.381 0.775-0.624 1.09-1.01 0.236-0.341 0.09-0.833-0.258-1.04-0.499-0.301-1.26-0.179-1.55 0.355-0.152 0.109-0.0719 0.498-0.268 0.477-0.319-0.0396-0.638-0.0792-0.958-0.119 0.0321-0.829 0.726-1.53 1.52-1.68 0.779-0.15 1.69-0.0424 2.26 0.552 0.472 0.437 0.639 1.2 0.287 1.76-0.324 0.522-0.867 0.845-1.28 1.29-0.203 0.215-0.176 0.533-0.182 0.806zm-1.03 1.53v-1.14h1.14v1.14h-1.14z"/>
+    </g>
+</svg>

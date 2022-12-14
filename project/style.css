@@ -1,0 +1,334 @@
+:root {
+    --blue-1: #88aaff;
+    --blue-2: #0088ff;
+    --orange-1: #ffaa88;
+    --orange-2: #ff8800;
+}
+
+body {
+    margin: 0 auto;
+    background: #eee;
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 1em;
+}
+
+main > section {
+    margin-bottom: 1em;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+#input-container section {
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+section.input {
+    width: 100%;
+    /* border-radius: 3px; */
+}
+
+section.input select {
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 -1px rgba(0, 0, 0, 0.25);
+}
+
+section.input select:active {
+    background-color: #ddd;
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.25),
+        inset 0 1px rgba(0, 0, 0, 0.25);
+}
+
+section.input textarea {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    min-width: 100%;
+    font-size: 1.25em;
+    height: 4em;
+    margin-top: 0.5em;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.15),
+        inset 0 1px rgba(0, 0, 0, 0.25);
+}
+
+#source-input {
+    background: var(--blue-1);
+    border-radius: 4px;
+}
+
+#target-input {
+    background: var(--orange-1);
+    border-radius: 4px;
+}
+
+#action-buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+#action-buttons button {
+    font-size: 1.25em;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 -1px rgba(0, 0, 0, 0.25);
+}
+
+#action-buttons button:active {
+    background-color: #ddd;
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.25),
+        inset 0 1px rgba(0, 0, 0, 0.25);
+}
+
+#map-interface {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    width: 100%;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+#map-interface .cell {
+    display: flex;
+    flex-grow: 1;
+    border-radius: 4px;
+    padding: 0.5em;
+    align-items: center;
+}
+
+#map-interface .cell span {
+    flex-grow: 1;
+}
+
+#map-interface .cell button {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.25),
+        inset 0 -1px rgba(0, 0, 0, 0.25);
+    background: transparent;
+    margin: 0 auto;
+    font-size: 1.25em;
+}
+
+#map-interface .cell button:hover:not([data-active="true"]) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#map-interface .cell button:active:not([data-active="true"]) {
+    background-color: rgba(0,0,0,0.25);
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.25),
+        inset 0 1px rgba(0, 0, 0, 0.25);
+}
+
+#map-interface .cell button[data-active="true"] {
+    background-color: #fff;
+    border-color: black;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5),
+        inset 0 2px 1px rgba(0, 0, 0, 0.25);
+    /* font-weight: bold; */
+}
+
+#map-interface .cell button[data-active="true"]::before {
+    content: ">>";
+}
+
+#source-cell {
+    background: var(--blue-1);
+}
+
+#target-cell {
+    background: var(--orange-1);
+}
+
+#map-parent {
+    position: relative;
+}
+
+#error-banner {
+    z-index: 1;
+    position: absolute;
+    top: -1em;
+    width: calc(100% - 2em);
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: opacity 1s;
+    background-color: #d66;
+    text-align: center;
+}
+
+#map {
+    max-width: 100%;
+    position: relative;
+    clip-path: border-box;
+}
+/*
+
+#zoom-range {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+} */
+
+/*
+#map-overlay {
+    opacity: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+*/
+
+#map svg {
+    /* position: absolute; */
+    /* animation: filter 1s; */
+    max-width: 100%;
+    height: auto;
+    /* overflow: scroll; */
+}
+/*
+#map::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: zoom-in;
+    visibility: hidden;
+}
+*/
+/*
+#map.zooming::after {
+    visibility: visible;
+}
+
+#map.zooming svg {
+    pointer-events: none;
+}
+*/
+
+#map.zoomed {
+    overflow: scroll;
+}
+
+#map.zoomed svg {
+    max-width: 1800px;
+}
+
+/*
+@media (max-width: 600px) {
+    #map.zoomed svg {
+        max-width: 1600px;
+    }
+}
+*/
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+    }
+
+    #input-container {
+        flex-direction: row;
+    }
+
+    #action-buttons {
+        flex-direction: column;
+    }
+
+    #map-interface {
+        grid-template: 1fr / 1fr 1fr;
+    }
+
+    #map.zoomed svg {
+        max-width: unset;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --blue-1: #048;
+        --orange-1: #840;
+    }
+
+    body {
+        color: #fff;
+        background-color: #222;
+    }
+
+    section.input select,
+    section.input textarea,
+    #action-buttons button {
+        background-color: #444;
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+    }
+
+    #map-interface .cell button {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+
+    section.input select:active,
+    #action-buttons button:active,
+    #map-interface .cell button:active:not([data-active="true"]) {
+        background-color: #222;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0 -1px rgba(255, 255, 255, 0.25),
+            inset 0 1px rgba(0, 0, 0, 0.25);
+    }
+
+    #map-interface .cell button[data-active="true"] {
+        color: black;
+        box-shadow: 0 0 0 1px black;
+    }
+
+    #error-banner {
+        background-color: #a33;
+        color: white;
+    }
+
+    #ocean {
+        fill: #444;
+    }
+
+    path {
+        stroke: #444 !important;
+    }
+
+    #map-overlay-text {
+        fill: white !important;
+    }
+}
