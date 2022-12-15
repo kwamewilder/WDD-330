@@ -82,7 +82,7 @@ main {
 }
 
 body {
-  background: url(./images/main-background.jpg) no-repeat;
+  background: url(./images/main-background.svg) no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #0C0C0C;
