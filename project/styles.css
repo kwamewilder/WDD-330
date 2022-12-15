@@ -312,12 +312,12 @@ ul#starwars li.full-detail {
 
 ul#starwars li.green {
   background: #e6ffe6;
-  box-shadow: #0F0 0px 0px 0px 2px;
+  box-shadow: red;
 }
 
 ul#starwars li.green:hover {
-  box-shadow: #0F0 0px 0px 20px 2px;
-  text-shadow: #0F0 0px 0px 6px, #0F0 0px 0px 10px;
+  box-shadow: red;
+  text-shadow: red;
 }
 
 ul li.red {
